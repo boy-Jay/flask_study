@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block image %}
+    <img src="{{ url_for("static", filename="/images/people1.jpg")}}" alt="">
+{% endblock %}
+
+{% block info %}
+    from child1
+{% endblock %}
+
+{% block background_color %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_child1.css') }}">
+
+{% endblock %}

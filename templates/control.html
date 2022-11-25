@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>控制语句demo</title>
+</head>
+<body>
+{%  if age>=18 %}
+<div>您已经成年，允许进入</div>
+{% elif age <12 %}
+<div>禁止进入网吧</div>
+{% else %}
+<div>请在家长陪同下进入网吧</div>
+{% endif %}
+</body>
+<body>
+{% for book in books %}
+  <div>图书名称：{{book.name}}, 图书作者：{{book.author}}</div>
+{% endfor %}
+</body>
+</html>
